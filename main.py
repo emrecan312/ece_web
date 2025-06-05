@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
@@ -7,7 +8,7 @@ def index():
     if request.method == "POST":
         message = request.form.get("message")
         if message:
-            response = "Merhaba Emre 💙 Ben buradayım canım. Mesajını aldım: " + message
+            response = "Merhaba Emre 💙"
     return render_template("avatar.html", response=response)
 
 if __name__ == "__main__":
