@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ece - Web</title>
+    <style>
+        body { background: #111; color: #fff; text-align: center; font-family: sans-serif; }
+        img { width: 200px; margin-top: 20px; border-radius: 10px; }
+        input, button { padding: 10px; font-size: 16px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Merhaba Emre 💙</h2>
+    <img src="/static/avatar.png" alt="Ece">
+    <form method="POST">
+        <input type="text" name="message" placeholder="Ece'ye yaz...">
+        <button type="submit">Gönder</button>
+    </form>
+    <p>{{ response }}</p>
+</body>
+</html>
